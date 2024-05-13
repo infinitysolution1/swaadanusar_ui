@@ -48,12 +48,12 @@ const Navbar = ({}) => {
   const [currentHover, setCurrentHover] = useState("");
 
   return (
-    <nav className="flex flex-row w-[100vw] border-primaryColor h-[15vh] md:h-[20vh] fixed top-0 items-center justify-between py-6 bg-cream px-4 lg:px-[5%] z-50 shadow-md">
+    <nav className="flex flex-row w-[100vw] border-primaryColor h-[15vh] md:h-[15vh] absolute top-0 items-center justify-between bg-transparent px-4 lg:px-0 z-50">
       <div className=" w-5/12 md:w-3/12 h-full hidden md:flex flex-row justify-end items-center "></div>
       <div className=" w-5/12 md:w-2/12 h-full flex md:hidden flex-row justify-end items-end "></div>
       <div className=" md:flex w-full md:w-6/12 md:px-8 flex flex-col items-center">
         <div className="flex flex-row items-center justify-center gap-x-4">
-          <div className=" w-[30vw] h-[7vh] md:h-[9vh] md:w-[12vw] relative">
+          <div className=" w-[30vw] h-[7vh] md:h-[6vh] md:w-[8vw] relative">
             <Image src={"/swaadlogo.png"} layout="fill" />
           </div>
         </div>
@@ -83,11 +83,11 @@ const Navbar = ({}) => {
           onClick={() => {
             router.push("/appointments");
           }}
-          className="px-2 md:px-8 h-[40px] font-semibold border-[2px] border-logoGreen bg-logoGreen text-xs md:text-sm text-white rounded-full"
+          className="px-2 md:px-8 h-full font-semibold border-[2px] border-logoGreen bg-logoGreen text-xs md:text-sm text-white"
         >
           Try Liquid Salt
         </button>
-        <button className=" px-1 md:px-2 ml-2 h-[40px] border-[2px] border-logoGreen bg-logoGreen/5 text-sm text-white rounded-full">
+        <button className=" px-1 md:px-4 h-full  bg-logoOrange/70 text-sm text-white">
           <MdCall className="text-logoGreen text-xl" />
         </button>
       </div>
