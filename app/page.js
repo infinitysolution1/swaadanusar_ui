@@ -1,11 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import WaveBg from "@/components/WaveBg1";
 import Image from "next/image";
-import LowNa from "@/components/LowNa";
 import WhyUsHome from "@/components/WhyUsHome";
 import OurSocial from "@/components/OurSocial";
 import Testimonials from "@/components/Testimonials";
+import AsSeenOn from "@/components/AsSeenOn";
+import ContactUs from "@/components/ContactUs";
 
 export default function Home() {
   return (
@@ -71,6 +71,8 @@ export default function Home() {
       <WhyUsHome />
       <OurSocial />
       <Testimonials />
+      <AsSeenOn />
+      <ContactUs />
     </main>
   );
 }

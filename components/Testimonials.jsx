@@ -34,7 +34,7 @@ const Testimonials = () => {
           Here are some of the testimonials from our customers.
         </p>
       </div>
-      <div className="flex flex-col w-11/12 md:w-8/12 mt-8 z-10">
+      <div className="flex flex-col w-11/12 md:w-8/12 z-10">
         <Swiper
           autoplay={{
             delay: 5000,
