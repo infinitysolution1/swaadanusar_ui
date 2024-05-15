@@ -11,9 +11,9 @@ const ContactUs = () => {
           Contact us for any queries or feedback.
         </p>
       </div>
-      <div className="w-10/12 flex flex-col items-center justify-center">
-        <form className="mt-8 w-full max-w-md">
-          <div className="mb-4">
+      <div className="w-6/12 flex flex-col items-center justify-center">
+        <form className="mt-8 w-full">
+          <div className="mb-4 flex flex-col">
             <label
               htmlFor="name"
               className="block text-darkBrown text-sm font-bold mb-2"
@@ -23,7 +23,7 @@ const ContactUs = () => {
             <input
               type="text"
               id="name"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-darkBrown leading-tight focus:outline-none focus:shadow-outline"
+              className=" appearance-none border-b-[1px] border-logoGreen bg-cream w-full py-2 px-3 text-darkBrown leading-tight focus:outline-none focus:shadow-none"
               placeholder="Enter your name"
             />
           </div>
@@ -37,8 +37,8 @@ const ContactUs = () => {
             <input
               type="email"
               id="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-darkBrown leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Enter your email"
+              className=" appearance-none border-b-[1px] border-logoGreen bg-cream w-full py-2 px-3 text-darkBrown leading-tight focus:outline-none focus:shadow-none"
             />
           </div>
           <div className="mb-4">
@@ -50,7 +50,7 @@ const ContactUs = () => {
             </label>
             <textarea
               id="message"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-darkBrown leading-tight focus:outline-none focus:shadow-outline"
+              className=" appearance-none border-b-[1px] border-logoGreen bg-cream w-full py-2 px-3 text-darkBrown leading-tight focus:outline-none focus:shadow-none"
               rows="4"
               placeholder="Enter your message"
             ></textarea>
