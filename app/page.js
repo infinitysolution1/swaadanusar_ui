@@ -10,7 +10,7 @@ import ContactUs from "@/components/ContactUs";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full 2xl:w-9/12 items-center z-0 bg-white  justify-between">
-      <div className="flex flex-col items-start md:h-[90vh] w-full relative">
+      <div className="flex flex-col items-start md:h-[100vh] w-full relative">
         <div className=" absolute bottom-0 w-screen h-[40vh]">
           <Image
             src={"/wave.png"}
@@ -50,7 +50,7 @@ export default function Home() {
               <div className="flex h-[40vh] w-[25vh] md:h-[60vh] md:w-[35vh] z-10 relative">
                 <Image src={"/product.png"} objectFit="contain" layout="fill" />
               </div>
-              <div className=" absolute animate-rotate right-[27.5%] z-20 bottom-0 md:bottom-[7vh] w-[10vh] h-[10vh] md:w-[15vh] md:h-[15vh]  ">
+              <div className=" absolute animate-rotate right-[27.5%] z-20 bottom-0 md:bottom-[12.5vh] w-[10vh] h-[10vh] md:w-[15vh] md:h-[15vh]  ">
                 <Image src={"/asset4.png"} objectFit="contain" layout="fill" />
               </div>
               <div className="absolute right-[15%] md:right-[22.5%] z-0 top-[10vh] flex justify-center items-center h-[12.5vh] w-[12.5vh] md:h-[20vh] md:w-[20vh]">
