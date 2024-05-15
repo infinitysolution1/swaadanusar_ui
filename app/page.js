@@ -6,6 +6,7 @@ import OurSocial from "@/components/OurSocial";
 import Testimonials from "@/components/Testimonials";
 import AsSeenOn from "@/components/AsSeenOn";
 import ContactUs from "@/components/ContactUs";
+import Blogs from "@/components/Blogs";
 
 export default function Home() {
   return (
@@ -72,6 +73,7 @@ export default function Home() {
       <OurSocial />
       <Testimonials />
       <AsSeenOn />
+      <Blogs />
       <ContactUs />
     </main>
   );
