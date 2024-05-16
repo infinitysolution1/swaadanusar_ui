@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import RevealOnScroll from "./RevealOnScroll";
 
 let sectionClass =
   "border-[1px] border-white bg-logoGreen py-4  px-2 h-[20vh] w-[20vh] md:h-[22.5vh] md:w-[22.5vh] rounded-full flex flex-col items-center justify-center";
@@ -21,7 +22,10 @@ const WhyUsHome = () => {
             }
           </p>
         </div>
-        <div className=" hidden md:flex flex-col items-center justify-center h-full">
+        <div className=" hidden md:flex flex-col items-center justify-center relative h-full">
+          <div className=" absolute animate-rotate right-8 z-20 bottom-0  w-[10vh] h-[10vh] md:w-[10vh] md:h-[10vh]  ">
+            <Image src={"/asset4.png"} objectFit="contain" layout="fill" />
+          </div>
           <div className="flex h-[50vh] w-[30vh] relative">
             <Image src={"/product.png"} objectFit="cover" layout="fill" />
           </div>
@@ -29,7 +33,7 @@ const WhyUsHome = () => {
         <div className=" w-full md:w-[35vw] h-full flex flex-col justify-center mt-[5vh] md:mt-0 md:px-8">
           <div className="grid grid-cols-2 gap-y-8">
             <div className={sectionClass}>
-              <p className="text-white text-center text-xs">
+              <p className="text-white text-center text-md">
                 {"Research based speciality salt for table use"}
               </p>
             </div>
@@ -48,7 +52,7 @@ const WhyUsHome = () => {
               </p>
             </div>
             <div className={sectionClass}>
-              <p className="text-white text-center text-xs">
+              <p className="text-white text-center text-md">
                 {"Easy to use salts for your table"}
               </p>
             </div>
@@ -56,37 +60,37 @@ const WhyUsHome = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-5 mt-[5vh] md:mt-0 items-center w-full h-[25vh] justify-center px-[5vw]">
-        <div className="flex flex-col items-center">
+        <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/lowsodium.png"} layout="fill" />
           </div>
           <p className="text-white text-sm md:text-md">Low Sodium</p>
-        </div>
-        <div className="flex flex-col items-center">
+        </RevealOnScroll>
+        <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/minerals.png"} layout="fill" />
           </div>
           <p className="text-white text-sm md:text-md">Multi Mineral</p>
-        </div>
-        <div className="flex flex-col items-center">
+        </RevealOnScroll>
+        <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/lowph.png"} layout="fill" />
           </div>
           <p className="text-white text-sm md:text-md">Alkaline Upto 8.5 pH</p>
-        </div>
-        <div className="flex flex-col items-center">
+        </RevealOnScroll>
+        <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/cooked.png"} layout="fill" />
           </div>
           <p className="text-white text-sm md:text-md">Cooked Salt</p>
-        </div>
+        </RevealOnScroll>
 
-        <div className="flex flex-col items-center">
+        <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/iodine.png"} layout="fill" />
           </div>
           <p className="text-white text-sm md:text-md">Enriched with Iodine</p>
-        </div>
+        </RevealOnScroll>
       </div>
     </div>
   );
