@@ -1,17 +1,18 @@
 import React from "react";
+import RevealOnScroll from "./RevealOnScroll";
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full bg-cream py-[5vh]">
-      <div className="w-10/12 flex flex-col items-center">
+    <div className="flex flex-col items-center justify-center w-full bg-cream py-[5vh] pb-[10vh]">
+      <RevealOnScroll addedClasses="w-10/12 flex flex-col items-center animate-slideUp">
         <h1 className=" text-2xl md:text-4xl font-bold text-center text-darkBrown">
           Contact <span className=" text-logoGreen">Us</span>
         </h1>
         <p className="text-sm text-center text-darkBrown">
           Contact us for any queries or feedback.
         </p>
-      </div>
-      <div className="w-6/12 flex flex-col items-center justify-center">
+      </RevealOnScroll>
+      <div className="w-5/12 flex flex-col items-center justify-center">
         <form className="mt-8 w-full">
           <div className="mb-4 flex flex-col">
             <label

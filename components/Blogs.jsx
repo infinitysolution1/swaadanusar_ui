@@ -1,17 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import RevealOnScroll from "./RevealOnScroll";
 
 const Blogs = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full bg-cream py-[5vh]">
-      <div className="w-10/12 flex flex-col items-center">
+      <RevealOnScroll addedClasses="w-10/12 flex flex-col items-center animate-slideUp">
         <h1 className=" text-2xl md:text-4xl font-bold text-center text-darkBrown">
           Blogs <span className=" text-logoGreen">Posts</span>
         </h1>
         <p className="text-sm text-center text-darkBrown">
           Check out our latest blogs and stay updated.
         </p>
-      </div>
+      </RevealOnScroll>
       <div className="w-10/12 mt-[10vh] flex flex-col items-center">
         <div className="flex flex-row w-full justify-between">
           <div className="flex flex-col items-center group w-[30%]">
