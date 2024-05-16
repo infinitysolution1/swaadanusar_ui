@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay } from "swiper/modules";
+import RevealOnScroll from "./RevealOnScroll";
 
 const Testimonials = () => {
   return (
@@ -26,14 +27,14 @@ const Testimonials = () => {
           objectPosition="bottom"
         />
       </div>
-      <div className="flex flex-col items-center w-11/12 md:w-full">
+      <RevealOnScroll addedClasses="flex flex-col items-center w-11/12 md:w-full animate-slideUp">
         <h2 className="text-2xl md:text-4xl font-bold text-center text-darkBrown">
           What Our <span className=" text-logoGreen">Customers Say</span>
         </h2>
         <p className="text-sm md:text-md text-darkBrown text-center">
           Here are some of the testimonials from our customers.
         </p>
-      </div>
+      </RevealOnScroll>
       <div className="flex flex-col w-11/12 md:w-8/12 z-10">
         <Swiper
           autoplay={{

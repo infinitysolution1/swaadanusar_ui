@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import RevealOnScroll from "./RevealOnScroll";
 
 const ImageSection = ({ image }) => {
   return (
@@ -18,7 +19,7 @@ const OurSocial = () => {
   return (
     <div className="flex flex-col relative items-center justify-center w-full md:h-[90vh] py-8 bg-cream">
       <div className="w-11/12 md:w-10/12 flex flex-col md:flex-row justify-start items-center  ">
-        <div className="w-full md:w-6/12 flex flex-col items-start justify-end h-full p-8">
+        <RevealOnScroll addedClasses="w-full md:w-6/12 flex flex-col items-start justify-end h-full p-8 animate-slideInLeft">
           <h1 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
             Our Social Media
           </h1>
@@ -29,7 +30,7 @@ const OurSocial = () => {
           <button className="bg-logoGreen text-white px-4 py-2 rounded-lg mt-4">
             Follow Us
           </button>
-        </div>
+        </RevealOnScroll>
         <div className="flex flex-row w-full md:w-6/12">
           <ImageSection image={"/social1.png"} />
           <ImageSection image={"/social2.png"} />
