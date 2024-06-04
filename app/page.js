@@ -37,7 +37,7 @@ export default function Home() {
               <h2
                 className={` ${sumac.className} text-[4.5rem] font-semibold leading-[4rem] text-logoGreen pr-8`}
               >
-                India's first Alkaline liquid salt
+                {"India's first Alkaline liquid salt"}
               </h2>
               <p className="text text-md text-center md:text-start text-darkBrown mt-4">
                 {
