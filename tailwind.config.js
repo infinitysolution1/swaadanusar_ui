@@ -39,16 +39,14 @@ module.exports = {
           "100%": { transform: "rotate(360deg)" },
         },
         bounce: {
-          "0%, 20%, 50%, 80%, 100%": {
+          "0%, 50%, 100%": {
             transform: "translateY(0)",
             animationTimingFunction: "cubic-bezier(0.8,0,1,1)",
           },
-          "40%": {
-            transform: "translateY(40px)",
-            animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
-          },
-          "60%": {
-            transform: "translateY(20px)",
+
+          "25%, 75%": {
+            transform: "translateY(20px) ",
+
             animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
           },
         },
