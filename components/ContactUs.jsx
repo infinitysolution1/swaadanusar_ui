@@ -3,7 +3,7 @@ import RevealOnScroll from "./RevealOnScroll";
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full bg-cream py-[5vh] pb-[10vh]">
+    <div className="flex flex-col items-center justify-center w-full bg-cream  md:py-[5vh] pb-[5vh] md:pb-[10vh]">
       <RevealOnScroll addedClasses="w-10/12 flex flex-col items-center animate-slideUp">
         <h1 className=" text-2xl md:text-4xl font-bold text-center text-darkBrown">
           Contact <span className=" text-logoGreen">Us</span>
@@ -12,7 +12,7 @@ const ContactUs = () => {
           Contact us for any queries or feedback.
         </p>
       </RevealOnScroll>
-      <div className="w-5/12 flex flex-col items-center justify-center">
+      <div className=" w-10/12 md:w-5/12 flex flex-col items-center justify-center">
         <form className="mt-8 w-full">
           <div className="mb-4 flex flex-col">
             <label

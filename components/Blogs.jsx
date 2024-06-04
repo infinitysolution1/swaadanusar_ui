@@ -13,9 +13,9 @@ const Blogs = () => {
           Check out our latest blogs and stay updated.
         </p>
       </RevealOnScroll>
-      <div className="w-10/12 mt-[10vh] flex flex-col items-center">
-        <div className="flex flex-row w-full justify-between">
-          <div className="flex flex-col items-center group w-[30%]">
+      <div className="w-10/12 mt-[5vh] md:mt-[10vh] flex flex-col items-center">
+        <div className="flex flex-col md:flex-row w-full md:justify-between">
+          <div className="flex flex-col items-center group w-full md:w-[30%]">
             <div className="h-[30vh] z-0 w-full bg-gray-200  overflow-hidden relative">
               <Image
                 src="/social2.png"
@@ -23,7 +23,7 @@ const Blogs = () => {
                 className=" transition-all group-hover:opacity-55 group-hover:scale-125 group-hover:duration-500"
               />
             </div>
-            <div className="w-3/4 z-10 bg-logoOrange py-8 shadow flex flex-col items-center px-4 -translate-y-[5vh] transition-all group-hover:-translate-y-[15vh] group-hover:duration-500">
+            <div className="w-3/4 z-10 bg-logoOrange py-4 md:py-8 shadow flex flex-col items-center px-4 -translate-y-[10vh]  md:-translate-y-[5vh] transition-all group-hover:-translate-y-[15vh] group-hover:duration-500">
               <h1 className="text-white text-lg font-bold text-center mt-2">
                 {"Why You Should Eat Liquid Salt?"}
               </h1>
@@ -34,7 +34,7 @@ const Blogs = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center group w-[30%]">
+          <div className="flex flex-col items-center group w-full md:w-[30%]">
             <div className="h-[30vh] z-0 w-full bg-gray-200  overflow-hidden relative">
               <Image
                 src="/social2.png"
@@ -42,7 +42,7 @@ const Blogs = () => {
                 className=" transition-all group-hover:opacity-55 group-hover:scale-125 group-hover:duration-500"
               />
             </div>
-            <div className="w-3/4 z-10 bg-logoOrange py-8 shadow flex flex-col items-center px-4 -translate-y-[5vh] transition-all group-hover:-translate-y-[15vh] group-hover:duration-500">
+            <div className="w-3/4 z-10 bg-logoOrange py-4 md:py-8 shadow flex flex-col items-center px-4 -translate-y-[10vh]  md:-translate-y-[5vh] transition-all group-hover:-translate-y-[15vh] group-hover:duration-500">
               <h1 className="text-white text-lg font-bold text-center mt-2">
                 {"Why You Should Eat Liquid Salt?"}
               </h1>
@@ -53,7 +53,7 @@ const Blogs = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center group w-[30%]">
+          <div className="flex flex-col items-center group w-full md:w-[30%]">
             <div className="h-[30vh] z-0 w-full bg-gray-200  overflow-hidden relative">
               <Image
                 src="/social2.png"
@@ -61,7 +61,7 @@ const Blogs = () => {
                 className=" transition-all group-hover:opacity-55 group-hover:scale-125 group-hover:duration-500"
               />
             </div>
-            <div className="w-3/4 z-10 bg-logoOrange py-8 shadow flex flex-col items-center px-4 -translate-y-[5vh] transition-all group-hover:-translate-y-[15vh] group-hover:duration-500">
+            <div className="w-3/4 z-10 bg-logoOrange py-4 md:py-8 shadow flex flex-col items-center px-4 -translate-y-[10vh]  md:-translate-y-[5vh] transition-all group-hover:-translate-y-[15vh] group-hover:duration-500">
               <h1 className="text-white text-lg font-bold text-center mt-2">
                 {"Why You Should Eat Liquid Salt?"}
               </h1>

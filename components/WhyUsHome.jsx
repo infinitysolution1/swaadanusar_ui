@@ -10,7 +10,7 @@ let othersectionClass =
 
 const WhyUsHome = () => {
   return (
-    <div className="flex flex-col relative items-start justify-center w-full md:h-[100vh] py-8 bg-logoOrange/90">
+    <div className="flex flex-col relative items-start justify-center w-full  md:h-[100vh] py-8 bg-logoOrange/90">
       <div className="flex flex-col md:flex-row items-center w-full justify-center mt-[2.5vh] px-[5vw]">
         <div className=" w-full md:w-[35vw] h-full flex flex-col justify-center">
           <h2 className="font-bold text-[3rem] leading-[3rem]">SWAAD ANUSAR</h2>
@@ -59,7 +59,7 @@ const WhyUsHome = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-5 mt-[5vh] md:mt-0 items-center w-full h-[25vh] justify-center px-[5vw]">
+      <div className="grid grid-cols-2 md:grid-cols-5 mt-[5vh] md:mt-0 items-center w-full md:h-[25vh] justify-center px-[5vw]">
         <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/lowsodium.png"} layout="fill" />
