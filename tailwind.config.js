@@ -34,6 +34,10 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(5vh)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        slideDown: {
+          "0%": { opacity: 0, transform: "translateY(-5vh)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
         rotate: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
@@ -54,6 +58,7 @@ module.exports = {
       animation: {
         slideIn: "slideIn 2.5s ease-in-out forwards",
         slideUp: "slideUp 1s ease-in-out forwards",
+        slideDown: "slideDown 1s ease-in-out forwards",
         slideInLeft: "slideInLeft 2.5s ease-in-out forwards",
         slideInRight: "slideInRight 2.5s ease-in-out forwards",
         slideUpDelay: "slideUp 1.5s ease-in-out forwards delay-200",
