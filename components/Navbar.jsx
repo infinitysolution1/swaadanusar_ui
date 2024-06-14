@@ -30,8 +30,8 @@ const navbarItems = [
     link: "/about",
   },
   {
-    title: "R&D",
-    link: "/research",
+    title: "FAQ",
+    link: "/faq",
   },
   {
     title: "Blogs",
@@ -50,14 +50,19 @@ const Navbar = ({}) => {
   return (
     <nav className="flex flex-row w-[100vw] border-primaryColor h-[15vh] md:h-[17.5vh] absolute top-0 items-center justify-between bg-transparent px-4 lg:px-0 z-50">
       <div className=" w-5/12 md:w-3/12 h-full hidden md:flex flex-row justify-start items-center ">
-        <div className="flex h-[8vh] w-[8vh] mx-8 relative">
+        <a
+          onClick={() => {
+            router.push("/");
+          }}
+          className="flex h-[8vh] w-[8vh] mx-8 relative"
+        >
           <Image
             src={"/evocarelogo.png"}
             objectFit="contain"
             layout="fill"
             objectPosition="bottom"
           />
-        </div>
+        </a>
       </div>
       <div className=" w-5/12 md:w-2/12 h-full flex md:hidden flex-row justify-end items-end "></div>
       <div className=" md:flex w-full md:w-6/12 md:px-8 flex flex-col items-center">

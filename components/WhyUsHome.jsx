@@ -23,9 +23,6 @@ const WhyUsHome = () => {
           </p>
         </div>
         <div className=" hidden md:flex flex-col items-center justify-center relative h-full">
-          <div className=" absolute animate-rotate right-8 z-20 bottom-0  w-[10vh] h-[10vh] md:w-[10vh] md:h-[10vh]  ">
-            <Image src={"/asset4.png"} objectFit="contain" layout="fill" />
-          </div>
           <div className="flex h-[50vh] w-[30vh] relative">
             <Image src={"/product.png"} objectFit="cover" layout="fill" />
           </div>
