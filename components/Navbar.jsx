@@ -33,10 +33,10 @@ const navbarItems = [
     title: "FAQ",
     link: "/faq",
   },
-  {
-    title: "Blogs",
-    link: "/blogs",
-  },
+  // {
+  //   title: "Blogs",
+  //   link: "/blogs",
+  // },
   {
     title: "Contact Us",
     link: "/contact",

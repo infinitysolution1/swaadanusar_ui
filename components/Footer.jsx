@@ -27,10 +27,10 @@ const navbarItems = [
     title: "R&D",
     link: "/research",
   },
-  {
-    title: "Blogs",
-    link: "/blogs",
-  },
+  // {
+  //   title: "Blogs",
+  //   link: "/blogs",
+  // },
   {
     title: "Contact Us",
     link: "/contact",

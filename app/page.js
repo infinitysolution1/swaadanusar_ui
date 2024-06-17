@@ -86,7 +86,7 @@ export default function Home() {
       <OurSocial />
       <Testimonials />
       <AsSeenOn />
-      <Blogs />
+      {/* <Blogs /> */}
       <ContactUs />
     </main>
   );
