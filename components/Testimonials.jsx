@@ -52,19 +52,22 @@ const Testimonials = () => {
                     <Image src={"/quote.png"} objectFit="cover" layout="fill" />
                   </div>
                   <p className="text-darkBrown text-md md:text-xl text-start mt-4">
-                    {testimonial.testimonial}
+                    {testimonial.testimonials}
                   </p>
                   <div className="flex flex-row items-center justify-start w-full mt-8">
-                    <div className="h-[6vh] w-[6vh] relative rounded-full overflow-hidden">
+                    {/* <div className="h-[6vh] w-[6vh] relative rounded-full overflow-hidden">
                       <Image
                         src={"/person1.png"}
                         objectFit="contain"
                         layout="fill"
                       />
-                    </div>
-                    <div className="flex flex-col items-start ml-4">
+                    </div> */}
+                    <div className="flex flex-col items-start">
                       <p className="text-darkBrown text-md font-bold">
                         {testimonial.name}
+                      </p>
+                      <p className="text-darkBrown text-xs font-bold">
+                        {testimonial.location}
                       </p>
                     </div>
                   </div>

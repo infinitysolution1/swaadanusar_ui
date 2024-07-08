@@ -58,10 +58,10 @@ const webItems = [
 
 const Footer = () => {
   return (
-    <footer class="bg-[#fff] border-[2px] border-logoOrange">
-      <div class=" max-w-screen  bg-cream space-y-4 bg- px-4 pt-8 sm:px-6 lg:px-[5%]">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <div class=" w-[50vw] h-[10vh] md:w-[12.5vw] relative">
+    <footer className="bg-[#fff] border-[2px] border-logoOrange">
+      <div className=" max-w-screen  bg-cream space-y-4 bg- px-4 pt-8 sm:px-6 lg:px-[5%]">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <div className=" w-[50vw] h-[10vh] md:w-[12.5vw] relative">
             <Image src={"/swaadlogo.png"} layout="fill" />
           </div>
         </div>
@@ -73,15 +73,15 @@ const Footer = () => {
               <div className="px-2 py-2 border-quirkyReddishOrange border-[1px] rounded-lg">
                 <MdOutlineMail className="text-quirkyReddishOrange text-sm" />
               </div>
-              <p className={`${footerItemsClass}`}>{" evocare@gmail.com"}</p>
+              <p className={`${footerItemsClass}`}>
+                {"evocare.essentials@gmail.com"}
+              </p>
             </a>
             <a className="flex flex-row items-center gap-x-2">
               <div className="px-2 py-2 border-quirkyReddishOrange border-[1px] rounded-lg">
                 <IoMdCall className="text-quirkyReddishOrange text-sm" />
               </div>
-              <p className={`${footerItemsClass} `}>
-                {" +91-633431023, 0141-22987671"}
-              </p>
+              <p className={`${footerItemsClass} `}>{" +91-9119149944"}</p>
             </a>
           </div>
           <div className="w-full lg:w-[55%] mt-8 pl-[5%] lg:mt-0 grid grid-cols-2 md:grid-cols-3 mb-[15vh]">

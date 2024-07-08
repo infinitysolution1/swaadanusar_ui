@@ -3,41 +3,7 @@ import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import Image from "next/image";
-
-let faq = [
-  {
-    question: "What is Swaad Anusar?",
-    answer:
-      "Swaad Anusar is India's first Liquid Alkaline Salt. It is a new age table salt which will act as a finisher salt. With a unique multi mineral blend boasting an alkaline level of up to 8.5 pH, it contains 75% less sodium than regular iodized salt.",
-  },
-  {
-    question: "What is the pH level of Swaad Anusar?",
-    answer:
-      "Swaad Anusar has an alkaline level of more than 8.5pH, which will help provide better immunity and digestion.",
-  },
-  {
-    question: "What are the benefits of Swaad Anusar?",
-    answer:
-      "Swaad Anusar is a research based speciality salt for table use. Our formula comprises multi-minerals which will meet all dietary requirements. Our salt is backed by an alkaline level of more than 8.5pH, which will help provide better immunity and digestion.",
-  },
-  {
-    question: "How can I use Swaad Anusar?",
-    answer:
-      "Swaad Anusar is easy to use salts for your table. You can use it as a finisher salt for your dishes.",
-  },
-  {
-    question: "Where can I buy Swaad Anusar?",
-    answer: "You can buy Swaad Anusar from our website.",
-  },
-  {
-    question: "How can I contact you?",
-    answer: "You can contact us through our website.",
-  },
-  {
-    question: "What are the different sizes available?",
-    answer: "Swaad Anusar is available in 500ml and 1L bottles.",
-  },
-];
+import { faq } from "@/utils/consts";
 
 const FAQ = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
