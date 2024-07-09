@@ -74,7 +74,7 @@ export default function Home() {
                   layout="fill"
                   className="shaddow-sm -z-10"
                 />
-                <p className=" text-white text-[10px] md:text-sm text-center w-1/2 mt-2 md:leading-5 -rotate-12">
+                <p className=" text-white text-[8px] md:text-sm text-center w-1/2 mt-2 md:leading-5 -rotate-12">
                   A Spray to healthier life
                 </p>
               </div>
