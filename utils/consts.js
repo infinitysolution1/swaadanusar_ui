@@ -79,3 +79,12 @@ export const faq = [
       "Liquid Salt can be used just like regular salt in your daily cooking. It can be added to soups, salads, marinades, and any other dish where you would normally use salt. Just a few drops are enough to season your food.",
   },
 ];
+
+export const posts = [
+  "https://www.instagram.com/p/C9KXkrLBlwb/",
+  "https://www.instagram.com/reel/C9EiCiQBCtQ/",
+  "https://www.instagram.com/p/C9ADeeZBPQd/",
+  "https://www.instagram.com/reel/C8cHv_vhQp0/",
+  "https://www.instagram.com/p/C8ef1IlhqBl/",
+  "https://www.instagram.com/p/C8UXSNthyVA/",
+];
