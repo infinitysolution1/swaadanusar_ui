@@ -1,6 +1,17 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import RevealOnScroll from "./RevealOnScroll";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { posts } from "@/utils/consts";
+import { InstagramEmbed } from "react-social-media-embed";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination, Autoplay } from "swiper/modules";
 
 const ImageSection = ({ image }) => {
   return (
@@ -17,30 +28,102 @@ const ImageSection = ({ image }) => {
 
 const OurSocial = () => {
   return (
-    <div className="flex flex-col relative items-center justify-center w-full md:h-[90vh] py-8 bg-cream">
+    <div className="flex flex-col relative items-center justify-center w-full h-full py-[5vh] lg:py-[10vh] bg-cream">
       <div className="w-11/12 md:w-10/12 flex flex-col md:flex-row justify-start items-center  ">
-        <RevealOnScroll addedClasses="w-full md:w-6/12 flex flex-col items-start justify-end h-full p-8 animate-slideInLeft">
-          <h1 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
+        <RevealOnScroll addedClasses="w-full flex flex-col items-center justify-end h-full p-8 animate-slideUp">
+          <h2 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
             Our Social Media
-          </h1>
-          <p className="text-start text-md text-darkBrown">
+          </h2>
+          <p className="text-center text-md text-darkBrown">
             Follow us on our social media platforms to stay updated with our
             latest products and offers.
           </p>
-          <button className="bg-logoGreen text-white px-4 py-2 rounded-lg mt-4">
+          <button
+            onClick={() => {
+              window.open(
+                "https://www.instagram.com/swaadanusar_salts/",
+                "_blank"
+              );
+            }}
+            className="bg-logoGreen text-white px-4 py-2 rounded-lg mt-4"
+          >
             Follow Us
           </button>
         </RevealOnScroll>
-        <div className="flex flex-row w-full md:w-6/12">
-          <ImageSection image={"/social1.png"} />
-          <ImageSection image={"/social2.png"} />
-        </div>
       </div>
-      <div className="w-11/12 md:w-10/12 grid grid-cols-2 md:grid-cols-4 justify-start items-center  ">
-        <ImageSection image={"/social1.png"} />
-        <ImageSection image={"/social2.png"} />
-        <ImageSection image={"/social3.png"} />
-        <ImageSection image={"/social4.png"} />
+      <div className="hidden w-full lg:flex flex-row gap-x-4 mt-[2.5vh] lg:mt-[5vh]">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {posts.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    zIndex: 10,
+                  }}
+                  onMouseEnter={() => {
+                    setCurrentPointer("a");
+                  }}
+                  onMouseLeave={() => {
+                    setCurrentPointer("");
+                  }}
+                >
+                  <InstagramEmbed height={600} width={330} url={item} />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+      <div className=" w-full flex lg:hidden flex-row gap-x-4 mt-[2.5vh] lg:mt-[5vh]">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {posts.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    zIndex: 10,
+                  }}
+                  onMouseEnter={() => {
+                    setCurrentPointer("a");
+                  }}
+                  onMouseLeave={() => {
+                    setCurrentPointer("");
+                  }}
+                >
+                  <InstagramEmbed height={600} width={330} url={item} />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </div>
   );

@@ -7,9 +7,8 @@ const TryLiquidSalt = () => {
   const router = useRouter();
   return (
     <a
-      onClick={() => {
-        router.push("/appointment");
-      }}
+      href="https://amzn.in/d/02jvll2l"
+      target="_blank"
       className="flex flex-col fixed right-0 top-1/3 h-auto  cursor-pointer bg-logoGreen z-40 animate-slideInRight px-3 py-4 rounded-l-md items-center transition-all translate-x-5"
     >
       <FaLink className="text-white mb-2 -rotate-90 text-sm" />

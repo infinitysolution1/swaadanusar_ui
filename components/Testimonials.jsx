@@ -28,7 +28,7 @@ const Testimonials = () => {
         />
       </div>
       <RevealOnScroll addedClasses="flex flex-col items-center w-11/12 md:w-full animate-slideUp">
-        <h2 className="text-2xl md:text-4xl font-bold text-center text-darkBrown">
+        <h2 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
           What Our <span className=" text-logoGreen">Customers Say</span>
         </h2>
         <p className="text-sm md:text-md text-darkBrown text-center">
