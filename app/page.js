@@ -14,7 +14,7 @@ const sumac = localFont({ src: "../public/sumac-timber.woff2" });
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full 2xl:w-9/12 items-center z-0 bg-white  justify-between">
-      <div className="flex flex-col items-start md:h-[100vh] w-full relative">
+      <div className="flex flex-col items-start h-full min-h-screen md:h-[100vh] w-full relative">
         <div className=" absolute bottom-0 w-screen h-[40vh]">
           <Image
             src={"/wave.png"}
@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row w-full h-full bg-quirkyMarineBlue/10 relative items-center p-8 justify-between pt-[15vh] px-[5vw]">
           <div className="flex flex-col items-center w-full md:w-1/2 h-full justify-center">
             <div className="flex flex-col items-start px-[5vw]">
-              <div className="flex h-[12.5vh] w-[20vh] relative">
+              <div className=" hidden lg:flex h-[12.5vh] w-[20vh] relative">
                 <Image
                   src={"/swaadlogo.png"}
                   objectFit="contain"
@@ -35,16 +35,16 @@ export default function Home() {
                 />
               </div>
               <h2
-                className={` ${sumac.className} text-[4.5rem] font-semibold leading-[4rem] text-logoGreen pr-8`}
+                className={` ${sumac.className} text-[4.5rem] mt-8 lg:mt-0 font-semibold leading-[4rem] text-logoGreen pr-8`}
               >
                 {"India's first Alkaline liquid salt"}
               </h2>
-              <p className="text text-md text-center md:text-start text-darkBrown mt-4">
+              <p className="text text-md text-start text-darkBrown mt-8 lg:mt-4">
                 {
                   "Transforming Taste, Elevating Health: Introducing Swaad Anusar, India's Pioneer Liquid Alkaline Salt!"
                 }
               </p>
-              <button className="bg-logoGreen border-[2px] border-logoOrange text-white px-8 py-2 mt-4 rounded-full">
+              <button className="bg-logoGreen border-[2px] border-logoOrange text-white px-8 py-2 mt-8 lg:mt-4 rounded-full">
                 Try Liquid Salt
               </button>
             </div>
@@ -83,9 +83,11 @@ export default function Home() {
         </div>
       </div>
       <WhyUsHome />
-      <OurSocial />
-      <Testimonials />
       <AsSeenOn />
+      <OurSocial />
+
+      <Testimonials />
+
       {/* <Blogs /> */}
       <ContactUs />
     </main>

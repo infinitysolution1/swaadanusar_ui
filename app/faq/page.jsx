@@ -9,7 +9,7 @@ const FAQ = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   return (
     <div className="flex flex-col items-center min-h-screen w-full bg-cream pb-8">
-      <div className=" w-11/12 flex flex-col md:flex-row justify-between mt-[22.5vh]">
+      <div className=" w-11/12 flex flex-col md:flex-row justify-between mt-[17.5vh] lg:mt-[22.5vh]">
         <div className=" w-full md:w-3/12 flex flex-col items-center md:items-start">
           <h2 className="text-4xl font-bold text-center md:text-start text-darkBrown">
             Frequently Asked Questions
@@ -18,7 +18,7 @@ const FAQ = () => {
             Here are some of the frequently asked questions about Swaad Anusar.
           </p>
         </div>
-        <div className=" w-full md:w-8/12 flex flex-col items-start">
+        <div className=" w-full md:w-8/12 mt-8 lg:mt-0 flex flex-col items-start">
           {faq.map((question, index) => {
             return (
               <a
