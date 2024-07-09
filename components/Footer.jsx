@@ -17,20 +17,16 @@ let footerItemsClass =
 const navbarItems = [
   {
     title: "Why Liquid Salt ?",
-    link: "/",
+    link: "/why-liquid-salt",
   },
   {
     title: "About Us",
     link: "/about",
   },
   {
-    title: "R&D",
-    link: "/research",
+    title: "FAQ",
+    link: "/faq",
   },
-  // {
-  //   title: "Blogs",
-  //   link: "/blogs",
-  // },
   {
     title: "Contact Us",
     link: "/contact",
@@ -58,7 +54,7 @@ const webItems = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fff] border-[2px] border-logoOrange">
+    <footer className="bg-[#fff] border-t-[2px] border-logoOrange">
       <div className=" max-w-screen  bg-cream space-y-4 bg- px-4 pt-8 sm:px-6 lg:px-[5%]">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className=" w-[50vw] h-[10vh] md:w-[12.5vw] relative">
@@ -69,7 +65,10 @@ const Footer = () => {
 
         <div className="container  mx-auto w-full flex flex-col lg:flex-row flex-wrap justify-between items-top">
           <div className="w-full  lg:w-[22.5%] h-full flex flex-col gap-y-4">
-            <a className="flex flex-row items-center gap-x-2">
+            <a
+              href="mailto:evocare.essentials@gmail.com"
+              className="flex flex-row items-center cursor-pointer gap-x-2"
+            >
               <div className="px-2 py-2 border-quirkyReddishOrange border-[1px] rounded-lg">
                 <MdOutlineMail className="text-quirkyReddishOrange text-sm" />
               </div>
@@ -77,7 +76,10 @@ const Footer = () => {
                 {"evocare.essentials@gmail.com"}
               </p>
             </a>
-            <a className="flex flex-row items-center gap-x-2">
+            <a
+              href="tel:+919119149944"
+              className="flex flex-row items-center cursor-pointer gap-x-2"
+            >
               <div className="px-2 py-2 border-quirkyReddishOrange border-[1px] rounded-lg">
                 <IoMdCall className="text-quirkyReddishOrange text-sm" />
               </div>
@@ -149,7 +151,8 @@ const Footer = () => {
                   <FaLinkedinIn className="text-quirkyReddishOrange text-sm" />
                 </a>
                 <a
-                  onClick={() => {}}
+                  href="https://www.instagram.com/swaadanusar_salts/"
+                  target="_blank"
                   className="p-2 border-quirkyReddishOrange rounded-md border-[1px]"
                 >
                   <FaInstagram className="text-quirkyReddishOrange text-sm" />
