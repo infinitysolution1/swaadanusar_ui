@@ -31,26 +31,22 @@ const WhyUsHome = () => {
           <div className="grid grid-cols-2 gap-y-8">
             <div className={sectionClass}>
               <p className="text-white text-center text-md">
-                {"Research based speciality salt for table use"}
+                {"Research-based specialty salt for convenient table use."}
               </p>
             </div>
             <div className={sectionClass}>
               <p className="text-white text-center text-xs ">
-                {
-                  "Our formula comprises multi-minerals which will meet all dietary requirements"
-                }
+                {"Formula meets dietary needs with essential multi-minerals."}
               </p>
             </div>
             <div className={sectionClass}>
               <p className="text-white text-center text-xs">
-                {
-                  "Our salt is backed by an alkaline level of more than 8.5pH, which will help provide better immunity and digestion."
-                }
+                {"Alkaline pH (>8.5) boosts immunity, aids digestion."}
               </p>
             </div>
             <div className={sectionClass}>
               <p className="text-white text-center text-md">
-                {"Easy to use salts for your table"}
+                {"Convenient salts for effortless table seasoning and use."}
               </p>
             </div>
           </div>
