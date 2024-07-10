@@ -13,7 +13,7 @@ const sumac = localFont({ src: "../public/sumac-timber.woff2" });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full 2xl:w-9/12 items-center z-0 bg-white  justify-between">
+    <main className="flex min-h-screen flex-col w-screen overflow-x-hidden 2xl:w-9/12 items-center z-0 bg-white  justify-between">
       <div className="flex flex-col items-start h-full min-h-screen md:h-[100vh] w-full relative">
         <div className=" absolute bottom-0 w-screen h-[40vh]">
           <Image
@@ -51,23 +51,23 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center w-full md:w-1/2 h-full justify-center relative">
             <div className="flex flex-col items-center">
-              <div className="flex h-[40vh] w-[30vh] md:h-[60vh] md:w-[50vh] z-10 relative">
+              <div className="flex h-[40vh] w-[30vh] md:h-[70vh] md:w-[50vh] z-10 relative">
                 <Image
-                  src={"/vegetable.png"}
+                  src={"/swaadbottle.png"}
                   objectFit="contain"
                   layout="fill"
                 />
               </div>
 
-              <div className="absolute right-[15%] md:right-[22.5%] animate-bounce z-0 top-[2.5vh] md:top-[10vh] flex justify-center items-center h-[12.5vh] w-[15vh] md:h-[30vh] md:w-[30vh]">
+              {/* <div className="absolute right-[15%] md:right-[22.5%] animate-bounce z-0 top-[2.5vh] md:top-[10vh] flex justify-center items-center h-[12.5vh] w-[15vh] md:h-[30vh] md:w-[30vh]">
                 <Image
                   src={"/spray.png"}
                   objectFit="contain"
                   layout="fill"
                   className="shaddow-sm -z-10"
                 />
-              </div>
-              <div className="absolute left-[15%] md:left-[22.5%] z-0 top-[5vh] md:top-[15vh] flex justify-center items-center h-[12.5vh] w-[12.5vh] md:h-[20vh] md:w-[20vh]">
+              </div> */}
+              <div className="absolute left-[15%] md:left-[20%] z-0 top-[5vh] md:top-[12.5vh] flex justify-center items-center h-[12.5vh] w-[12.5vh] md:h-[20vh] md:w-[20vh]">
                 <Image
                   src={"/asset2.svg"}
                   objectFit="contain"
@@ -83,9 +83,9 @@ export default function Home() {
         </div>
       </div>
       <WhyUsHome />
-      <AsSeenOn />
-      <OurSocial />
 
+      <OurSocial />
+      <AsSeenOn />
       <Testimonials />
 
       {/* <Blogs /> */}

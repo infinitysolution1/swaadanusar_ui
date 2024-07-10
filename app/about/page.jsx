@@ -1,4 +1,5 @@
 import React from "react";
+import CTAVetical from "@/components/CTAVetical";
 
 const AboutUs = () => {
   return (
@@ -13,6 +14,10 @@ const AboutUs = () => {
               "Learn more about who we are, our mission, values, and what motivates us make a difference."
             }
           </p>
+
+          <div className=" hidden lg:flex pr-8 w-full relative mt-[5vh]">
+            <CTAVetical />
+          </div>
         </div>
         <div className=" w-full md:w-[70%] mt-8 lg:mt-0 flex flex-col items-start">
           <div className=" flex flex-col items-start w-full border-[1px] border-darkBrown overflow-hidden rounded-2xl">
@@ -56,6 +61,10 @@ const AboutUs = () => {
                 }
               </p>
             </div>
+          </div>
+
+          <div className="flex lg:hidden   w-full relative my-[5vh]">
+            <CTAVetical />
           </div>
         </div>
       </div>

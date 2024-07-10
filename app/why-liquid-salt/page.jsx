@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import CTAVetical from "@/components/CTAVetical";
 const WhyUS = () => {
   return (
     <div className="flex flex-col items-center min-h-screen w-full bg-cream pb-8">
@@ -12,8 +13,8 @@ const WhyUS = () => {
             Here are some reasons why you should choose Swaad Anusar.
           </p>
 
-          <div className=" hidden lg:flex h-[50vh] w-full relative mt-[5vh]">
-            <Image src={"/product.png"} objectFit="contain" layout="fill" />
+          <div className=" hidden lg:flex pr-8 w-full relative mt-[5vh]">
+            <CTAVetical />
           </div>
         </div>
         <div className=" w-full md:w-[70%] mt-8 lg:mt-0 flex flex-col items-start">
@@ -94,6 +95,10 @@ const WhyUS = () => {
                 <li>{"Alkaline properties for potential health benefits"}</li>
               </ul>
             </div>
+          </div>
+
+          <div className="flex lg:hidden   w-full relative my-[5vh]">
+            <CTAVetical />
           </div>
         </div>
       </div>

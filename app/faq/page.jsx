@@ -4,6 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import Image from "next/image";
 import { faq } from "@/utils/consts";
+import CTAVetical from "@/components/CTAVetical";
 
 const FAQ = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -17,6 +18,10 @@ const FAQ = () => {
           <p className="text-md text-darkBrown text-center md:text-start mt-4">
             Here are some of the frequently asked questions about Swaad Anusar.
           </p>
+
+          <div className=" hidden lg:flex pr-8 w-full relative mt-[5vh]">
+            <CTAVetical />
+          </div>
         </div>
         <div className=" w-full md:w-8/12 mt-8 lg:mt-0 flex flex-col items-start">
           {faq.map((question, index) => {
@@ -52,6 +57,10 @@ const FAQ = () => {
               </a>
             );
           })}
+
+          <div className="flex lg:hidden  w-full relative my-[5vh]">
+            <CTAVetical />
+          </div>
         </div>
       </div>
     </div>
