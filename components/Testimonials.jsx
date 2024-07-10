@@ -18,7 +18,7 @@ import RevealOnScroll from "./RevealOnScroll";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col relative items-center justify-center w-full md:h-[70vh] py-8 bg-cream">
+    <div className="flex flex-col relative items-center justify-center w-full h-full pt-[10vh] pb-[5vh] bg-cream">
       <div className="w-full h-[70vh] absolute bottom-0">
         <Image
           src={"/bgasset.png"}

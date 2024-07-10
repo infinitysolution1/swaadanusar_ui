@@ -35,12 +35,12 @@ const WhyUsHome = () => {
               </p>
             </div>
             <div className={sectionClass}>
-              <p className="text-white text-center text-xs ">
+              <p className="text-white text-center text-md ">
                 {"Formula meets dietary needs with essential multi-minerals."}
               </p>
             </div>
             <div className={sectionClass}>
-              <p className="text-white text-center text-xs">
+              <p className="text-white text-center text-md">
                 {"Alkaline pH (>8.5) boosts immunity, aids digestion."}
               </p>
             </div>

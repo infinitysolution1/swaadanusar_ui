@@ -54,9 +54,9 @@ const webItems = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fff] border-t-[2px] border-logoOrange">
-      <div className=" max-w-screen  bg-cream space-y-4 bg- px-4 pt-8 sm:px-6 lg:px-[5%]">
-        <div className="sm:flex sm:items-center sm:justify-between">
+    <footer className=" bg-white z-40 border-t-[2px] border-logoOrange">
+      <div className=" max-w-screen bg-logoOrange/50  space-y-4 bg- px-4 pt-8 sm:px-6 lg:px-[5%]">
+        <div className="sm:flex pl-[5%] sm:items-center sm:justify-between">
           <div className=" w-[50vw] h-[10vh] md:w-[12.5vw] relative">
             <Image src={"/swaadlogo.png"} layout="fill" />
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
         <div className="my-8 h-[1px] w-full border-b-[1px] border-quirkyReddishOrange/20" />
 
         <div className="container  mx-auto w-full flex flex-col lg:flex-row flex-wrap justify-between items-top">
-          <div className="w-full  lg:w-[22.5%] h-full flex flex-col gap-y-4">
+          <div className="w-full pl-[5%] lg:w-[22.5%] h-full flex flex-col gap-y-4">
             <a
               href="mailto:evocare.essentials@gmail.com"
               className="flex flex-row items-center cursor-pointer gap-x-2"
@@ -86,7 +86,19 @@ const Footer = () => {
               <p className={`${footerItemsClass} `}>{" +91-9119149944"}</p>
             </a>
           </div>
-          <div className="w-full lg:w-[55%] mt-8 pl-[5%] lg:mt-0 grid grid-cols-2 md:grid-cols-3 mb-[15vh]">
+          <div className="w-full lg:w-[75%] mt-8 pl-[5%] lg:mt-0 grid grid-cols-2 md:grid-cols-3 mb-[5vh] lg:mb-[15vh]">
+            <div className="w-full flex flex-col items-left">
+              <h3 className="text-xl font-semibold text-quirkyReddishOrange">
+                Buy now
+              </h3>
+              <a
+                href="https://amzn.in/d/02jvll2l"
+                className={`${footerItemsClass} mt-2`}
+                target="_blank"
+              >
+                {"Amazon"}
+              </a>
+            </div>
             <div className="w-full flex flex-col items-left">
               <h3 className="text-xl font-semibold text-quirkyReddishOrange">
                 Quick Links

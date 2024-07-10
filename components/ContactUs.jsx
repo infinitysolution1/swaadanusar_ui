@@ -50,7 +50,7 @@ const ContactUs = () => {
   }, [emailSent]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full bg-cream  md:py-[5vh] py-[5vh] md:pb-[10vh]">
+    <div className="flex flex-col items-center justify-center w-full bg-cream  py-[5vh] md:py-[10vh]">
       <RevealOnScroll addedClasses="w-10/12 flex flex-col items-center animate-slideUp">
         <h2 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
           Contact <span className=" text-logoGreen">Us</span>

@@ -74,12 +74,6 @@ const OurSocial = () => {
                     justifyContent: "center",
                     zIndex: 10,
                   }}
-                  onMouseEnter={() => {
-                    setCurrentPointer("a");
-                  }}
-                  onMouseLeave={() => {
-                    setCurrentPointer("");
-                  }}
                 >
                   <InstagramEmbed height={600} width={330} url={item} />
                 </div>
@@ -110,12 +104,6 @@ const OurSocial = () => {
                     display: "flex",
                     justifyContent: "center",
                     zIndex: 10,
-                  }}
-                  onMouseEnter={() => {
-                    setCurrentPointer("a");
-                  }}
-                  onMouseLeave={() => {
-                    setCurrentPointer("");
                   }}
                 >
                   <InstagramEmbed height={600} width={330} url={item} />
