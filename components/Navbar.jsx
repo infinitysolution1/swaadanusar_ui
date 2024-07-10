@@ -47,9 +47,8 @@ const Navbar = ({}) => {
     <nav className="flex flex-row w-[100vw] border-primaryColor h-[15vh] lg:h-[17.5vh] absolute top-0 items-center justify-between bg-transparent px-4 lg:px-0 z-50">
       <div className=" w-5/12 lg:w-3/12 h-full hidden lg:flex flex-row justify-start items-center ">
         <a
-          onClick={() => {
-            router.push("/");
-          }}
+          href="https://evocaresalts.com/"
+          target="_blank"
           className="flex h-[8vh] w-[8vh] mx-8 cursor-pointer relative"
         >
           <Image
