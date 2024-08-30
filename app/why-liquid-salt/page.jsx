@@ -9,7 +9,7 @@ const WhyUS = () => {
           <h2 className=" text-3xl  lg:text-[2.25rem] lg:leading-[2.rem] font-bold text-center md:text-start text-logoGreen">
             Why Swaad Anusar?
           </h2>
-          <p className="text-md text-darkBrown text-center md:text-start mt-4">
+          <p className="text-base text-darkBrown text-center md:text-start mt-4">
             Here are some reasons why you should choose Swaad Anusar.
           </p>
 

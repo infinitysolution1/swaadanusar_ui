@@ -13,7 +13,7 @@ const sumac = localFont({ src: "../public/sumac-timber.woff2" });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-screen overflow-x-hidden 2xl:w-9/12 items-center z-0 bg-white  justify-between">
+    <main className="flex min-h-screen flex-col w-screen overflow-x-hidden  items-center z-0 bg-white  justify-between">
       <div className="flex flex-col items-start h-full min-h-screen md:h-[100vh] w-full relative">
         <div className=" absolute bottom-0 w-screen h-[40vh]">
           <Image
@@ -39,7 +39,7 @@ export default function Home() {
               >
                 {"India's first Alkaline liquid salt"}
               </h2>
-              <p className="text text-md text-start text-darkBrown mt-8 lg:mt-4">
+              <p className="text text-base text-start text-darkBrown mt-8 lg:mt-4">
                 {
                   "Transforming Taste, Elevating Health: Introducing Swaad Anusar, India's Pioneer Liquid Alkaline Salt!"
                 }

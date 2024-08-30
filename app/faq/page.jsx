@@ -15,7 +15,7 @@ const FAQ = () => {
           <h2 className="text-4xl font-bold text-center md:text-start text-darkBrown">
             Frequently Asked Questions
           </h2>
-          <p className="text-md text-darkBrown text-center md:text-start mt-4">
+          <p className="text-base text-darkBrown text-center md:text-start mt-4">
             Here are some of the frequently asked questions about Swaad Anusar.
           </p>
 
@@ -50,7 +50,7 @@ const FAQ = () => {
                   )}
                 </div>
                 {currentQuestion === index ? (
-                  <p className="text-md text-darkBrown mt-2 animate-slideDown">
+                  <p className="text-base text-darkBrown mt-2 animate-slideDown">
                     {question.answer}
                   </p>
                 ) : null}

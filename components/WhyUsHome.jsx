@@ -14,7 +14,7 @@ const WhyUsHome = () => {
       <div className="flex flex-col md:flex-row items-center w-full justify-center mt-[2.5vh] px-[5vw]">
         <div className=" w-full md:w-[35vw] h-full flex flex-col justify-center">
           <h2 className="font-bold text-[3rem] leading-[3rem]">SWAAD ANUSAR</h2>
-          <p className="text-darkBrown text-md"> The New Age of Table Salt</p>
+          <p className="text-darkBrown text-base"> The New Age of Table Salt</p>
 
           <p className="text-darkBrown text-sm mt-8">
             {
@@ -30,22 +30,22 @@ const WhyUsHome = () => {
         <div className=" w-full md:w-[35vw] h-full flex flex-col justify-center mt-[5vh] md:mt-0 md:px-8">
           <div className="grid grid-cols-2 gap-y-8">
             <div className={sectionClass}>
-              <p className="text-white text-center text-md">
+              <p className="text-white text-center text-base">
                 {"Research-based specialty salt for convenient table use."}
               </p>
             </div>
             <div className={sectionClass}>
-              <p className="text-white text-center text-md ">
+              <p className="text-white text-center text-base ">
                 {"Formula meets dietary needs with essential multi-minerals."}
               </p>
             </div>
             <div className={sectionClass}>
-              <p className="text-white text-center text-md">
+              <p className="text-white text-center text-base">
                 {"Alkaline pH (>8.5) boosts immunity, aids digestion."}
               </p>
             </div>
             <div className={sectionClass}>
-              <p className="text-white text-center text-md">
+              <p className="text-white text-center text-base">
                 {"Convenient salts for effortless table seasoning and use."}
               </p>
             </div>
@@ -57,32 +57,36 @@ const WhyUsHome = () => {
           <div className={othersectionClass}>
             <Image src={"/lowsodium.png"} layout="fill" />
           </div>
-          <p className="text-white text-sm md:text-md">Low Sodium</p>
+          <p className="text-white text-sm md:text-base">Low Sodium</p>
         </RevealOnScroll>
         <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/minerals.png"} layout="fill" />
           </div>
-          <p className="text-white text-sm md:text-md">Multi Mineral</p>
+          <p className="text-white text-sm md:text-base">Multi Mineral</p>
         </RevealOnScroll>
         <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/lowph.png"} layout="fill" />
           </div>
-          <p className="text-white text-sm md:text-md">Alkaline Upto 8.5 pH</p>
+          <p className="text-white text-sm md:text-base">
+            Alkaline Upto 8.5 pH
+          </p>
         </RevealOnScroll>
         <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/cooked.png"} layout="fill" />
           </div>
-          <p className="text-white text-sm md:text-md">Cooked Salt</p>
+          <p className="text-white text-sm md:text-base">Cooked Salt</p>
         </RevealOnScroll>
 
         <RevealOnScroll addedClasses="flex flex-col items-center">
           <div className={othersectionClass}>
             <Image src={"/iodine.png"} layout="fill" />
           </div>
-          <p className="text-white text-sm md:text-md">Enriched with Iodine</p>
+          <p className="text-white text-sm md:text-base">
+            Enriched with Iodine
+          </p>
         </RevealOnScroll>
       </div>
     </div>

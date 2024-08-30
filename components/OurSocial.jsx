@@ -34,7 +34,7 @@ const OurSocial = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
             Our Social Media
           </h2>
-          <p className="text-center text-md text-darkBrown">
+          <p className="text-center text-base text-darkBrown">
             Follow us on our social media platforms to stay updated with our
             latest products and offers.
           </p>

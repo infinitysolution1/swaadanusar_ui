@@ -31,7 +31,7 @@ const Testimonials = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-start text-darkBrown">
           What Our <span className=" text-logoGreen">Customers Say</span>
         </h2>
-        <p className="text-sm md:text-md text-darkBrown text-center">
+        <p className="text-sm md:text-base text-darkBrown text-center">
           Here are some of the testimonials from our customers.
         </p>
       </RevealOnScroll>
@@ -51,7 +51,7 @@ const Testimonials = () => {
                   <div className="h-[8vh] w-[8vh] relative">
                     <Image src={"/quote.png"} objectFit="cover" layout="fill" />
                   </div>
-                  <p className="text-darkBrown text-md md:text-xl text-start mt-4">
+                  <p className="text-darkBrown text-base md:text-xl text-start mt-4">
                     {testimonial.testimonials}
                   </p>
                   <div className="flex flex-row items-center justify-start w-full mt-8">
@@ -63,7 +63,7 @@ const Testimonials = () => {
                       />
                     </div> */}
                     <div className="flex flex-col items-start">
-                      <p className="text-darkBrown text-md font-bold">
+                      <p className="text-darkBrown text-base font-bold">
                         {testimonial.name}
                       </p>
                       <p className="text-darkBrown text-xs font-bold">

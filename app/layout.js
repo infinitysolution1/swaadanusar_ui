@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`${inter.className} bg-white max-w-screen overflow-x-visiblehidden`}
+        className={`${inter.className} bg-white max-w-screen overflow-x-hidden`}
       >
         <Navbar />
         {children}

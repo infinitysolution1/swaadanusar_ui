@@ -61,7 +61,7 @@ const Blogs = () => {
                     />
                   </div>
                   <div className=" w-4/12 flex flex-col items-start px-4 justify-center">
-                    <h1 className="text-darkBrown font-semibold text-md md:text-2xl text-start mt-4">
+                    <h1 className="text-darkBrown font-semibold text-base md:text-2xl text-start mt-4">
                       {testimonial.title}
                     </h1>
                     <p className="text-darkBrown text-base text-start mt-4">
